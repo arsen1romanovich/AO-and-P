@@ -1,11 +1,13 @@
 #include <iostream>
-
 using namespace std;
 int main()
 {
-    int x = 3
-    cout << sizeof(int) << endl;
-    cout << sizeof(x * 10) << endl;
-    cout << sizeof(x * 0.1) << endl;
-    return 0;
+    for (int i = 1; i < 100; ++i) // перебираем все числа от 1 до 99
+    {
+        if (i % 2) // если число нечетное,
+                    // то переходим к следующей итерации
+        continue;
+        cout << i << "\t"; // выводим число на экран
+    }
+return 0;
 }

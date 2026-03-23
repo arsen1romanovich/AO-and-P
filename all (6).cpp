@@ -1,12 +1,8 @@
-#include <iostream> using namespace std;
-
-int main()
+int b[10]; // объявление массива
+for (int i = 0; i < 10; i++) //ввод элементов массива
 {
-    int x = 3, y = 8;
-    bool f = false, v = true;
-    cout << x << "\t" << !x << endl;
-    cout << -y << "\t" << !y << endl;
-    cout << f << "\t" << !f << endl;
-    cout << v << "\t" << !v << endl;
-    return 0;
+    cout << "b[" << i << "] = ";
+    cin >> b[i];
 }
+for (int i = 0; i < 10; i++) // вывод элементов массива на экран
+    cout << "b[" << i << "] = " << b[i] << "\n";

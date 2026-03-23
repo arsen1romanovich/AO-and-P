@@ -1,12 +1,21 @@
-#include <iostream> // директива препроцессора
-
-/* пример программы, подсчитывающей сумму двух целых чисел, значения которых вводятся с клавиатуры, а результат выводится на экран */
+#include <iostream>
 using namespace std;
-int main() >
+int * creat(int n)
 {
-    int a,b; // описание переменных
-    cout << "Введите 2 целых числа" << endl; // оператор вывода
-    cin >> a >> b; // оператор ввода
-    cout << "Их сумма равна" << a + b; // оператор вывода
-    return 0;
+int *mat = new int [n];
+for (int i = 0; i<n; i++)
+mas[i] = i*i;
+return mas;
+}
+void print (int *max, int n)
+{
+for (int i = 0; i < n; i++)
+cout << mas[i] << "\"
+}
+int main()
+{
+int n = 5;
+int *a = creat(n);
+print(a, n);
+return 0;
 }
